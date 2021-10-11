@@ -1,0 +1,14 @@
+from pip._vendor.distlib.compat import raw_input
+while True:
+    try:
+        o1, o2 = map(int, raw_input("Ingrese los dos numeros separados por un espacio = ").split())
+        o3 = o1 + o2
+        o4 = o1 - o2
+        o5 = o1 * o2
+        o6 = round(o1 / o2)
+        o7 = o1 % o2
+        print("La sumatoria de esos dos numeros es:", o3, "la resta es:", o4, "su multiplicacion es:", o5)
+        print("La divison redondeada es:", o6, "y finalmente su residuo es:", o7)
+        break
+    except:
+        print("Asegurese de poner bien los numeros o evitar 0 en divisores")
