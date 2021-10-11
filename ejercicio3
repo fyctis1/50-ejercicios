@@ -1,0 +1,4 @@
+from pip._vendor.distlib.compat import raw_input
+o1, o2 = map(int, raw_input("ingrese los numeros separados por un espacio = ").split())
+o3 = o1 + o2
+print("La sumatoria de esos dos numeros es =", o3)
