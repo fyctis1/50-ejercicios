@@ -1,0 +1,10 @@
+import math
+while True:
+    try:
+        p = float(input("Ingrese el radio del circulo (en metros) = "))
+        peri = 2*math.pi*p
+        area = math.pi*p**2
+        print("El perimetro del circulo es", round(peri), "m", "y el area de este es", round(area), "m")
+        break
+    except:
+        print("Asegurese de poner bien el numero")
