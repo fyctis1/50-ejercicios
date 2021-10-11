@@ -1,0 +1,3 @@
+n = int(input(("Ingrese un numero para sacarle el cuadrado = ")))
+y = n**2
+print("El cuadrado del numero es", y)
