@@ -1,0 +1,17 @@
+while True:
+  try:
+    dato = input("Ingrese dato: ")
+    num = None
+    for conv in (int, float, complex):
+        try:
+            num = conv(dato)
+            break
+        except ValueError:
+            pass
+    if type(num)==float:
+      print("El numero es su parte entera es", round(num), ", y el numero es su parte decimal es", num)
+      break
+    else:
+      print("El numero no es decimal")
+  except:
+    print("Expresion numerica no valida")
